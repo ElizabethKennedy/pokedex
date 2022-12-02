@@ -1,0 +1,358 @@
+* {
+  font-family:'Cream Cake';
+
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  height: 80vh;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background-color: salmon;
+  background-image: linear-gradient(red, yellow);
+}
+
+ul {
+  list-style: inside square;
+}
+
+li {
+  line-height: 1.2;
+}
+
+#pokedexLogo {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  justify-self: center;
+  margin: 3.1rem 3rem 2rem 2rem;
+}
+
+#logoImg {
+  width: 500px;
+}
+
+
+#homePage {
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 1000px;
+  line-height: 1.5;
+}
+
+#startButton {
+  padding:8px 35px;
+  color: white;
+  background-color: gray;
+  border-radius: 9999px;
+}
+
+
+#allPokemon {
+  max-width: 1138px;
+}
+
+#photoList {
+  list-style: none;
+}
+
+#photoList li {
+  display: inline;
+}
+
+.pokemonImg {
+  width: 7.5rem;
+  padding: .1rem;
+}
+
+.filters {
+  padding: 1rem;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: salmon;
+  border: none;
+  border-radius: 3px;
+  padding: .5rem .5rem;
+  margin: .5rem 0rem;
+  font-size: 1em;
+  color: var(--charcoal-font);
+}
+
+
+#background {
+  background-repeat: no-repeat;
+  width:'100vw';
+  height: 100vh;
+  background-size: contain;
+  margin: 0px;
+}
+
+#pokedex {
+  width: calc(400px * 2);
+  font-size: .7rem;
+  display: grid;
+  padding: 3px, 3px, 3px, 3px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  grid-template-columns: 82px 25px 80px 48px 36px 28px 32px 32px 122px 118px 20px 118px;
+  grid-template-rows: 170px 18px 92px 18px 40px 36px 38px 34px 26px 8px 40px 8px 44px;
+}
+
+#screenImg {
+  width: 9rem;
+}
+
+#mainScreen {
+grid-column: 2 / 8;
+grid-row: 2 / 6;
+align-self: center;
+justify-self: center;
+}
+/* STATS */
+#nameScreen {
+  grid-column: 3 / 5;
+  grid-row: 10 / 13;
+  align-self: center;
+  justify-self: center;
+  color: var(--charcoal-font);
+}
+
+#heightScreen {
+  grid-column: 10 / 11;
+  grid-row: 11 / 12;
+  align-self: center;
+  justify-self: center;
+  background-color: greenyellow;
+  background-image: linear-gradient(red, yellow);
+  font-size: .55rem;
+}
+
+#weightScreen {
+  grid-column: 12 / 13;
+  grid-row: 11 / 12;
+  align-self: center;
+  justify-self: center;
+  color: var(--green-font);
+  font-size: .55rem;
+}
+
+#typeScreen {
+  grid-column: 10 / 12;
+  grid-row: 3 / 4;
+  color: var(--green-font);
+  padding-left: 13px;
+}
+
+#weaknessScreen {
+  grid-column: 11 / 13;
+  grid-row: 3 / 4;
+  color: var(--green-font);
+  padding-left: 15px;
+}
+
+
+
+.invisible-button {
+  background-color: transparent;
+  outline: none;
+  /* border: none; */
+}
+
+#padRight {
+  grid-column: 8 / 9;
+  grid-row: 9 / 10;
+  justify-self: center;
+  padding-right: 5%;
+}
+
+#padRightButton {
+  width: 36px;
+  height: 30px;
+  border-left: none;
+  border-radius: 12%;
+}
+
+#padLeft {
+  grid-column: 6 / 7;
+  grid-row: 9 / 10;
+  justify-self: center;
+  padding-left: 5%;
+}
+
+#padLeftButton {
+  width: 36px;
+  height: 30px;
+  border-right: none;
+  border-radius: 12%;
+}
+
+#padUp {
+  grid-column: 7 / 8;
+  grid-row: 8 / 9;
+  padding: 5% 0 0 0;
+
+}
+
+#padUpButton {
+  width: 30px;
+  height: 36px;
+  /* display: flex; */
+  /* align-self: bottom; */
+  border-bottom: none;
+  border-radius: 12%;
+}
+
+#padDown {
+  grid-column: 7 / 8;
+  grid-row: 10 / 12;
+  justify-self: center;
+}
+
+#downButton {
+  width: 30px;
+  height: 36px;
+  border-top: none;
+  border-radius: 12%;
+}
+
+#blueButtonDiv {
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
+  justify-self: center;
+  padding: 7% 2% 0 0;
+}
+
+#blueButton {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+}
+
+#blackButtonDiv {
+  grid-column: 1 / 3;
+  grid-row: 7 / 11;
+  justify-self: flex-end;
+  align-self: center;
+  padding:1% 3% 0 0;
+}
+
+#blackButton {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+
+#keyboard {
+  grid-row: 5 / 7;
+  grid-column: 10 / 13;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.key {
+  border-radius: 10%;
+}
+
+@media only screen and (max-width: 600px) {
+
+  body {
+    font-size: .7rem;
+
+  }
+
+  #searchType, #searchWeaknesses {
+    font-size: .7rem;
+  }
+
+  #logoImg {
+    width: 250px;
+  }
+
+  #allPokemon {
+    max-width: 462px;
+  }
+
+  .filters {
+    padding: .5rem;
+  }
+
+  select {
+    border-radius: 3px;
+    padding: .25rem .25rem;
+    font-size: .5rem;
+  }
+
+  #pokedex {
+    width: 380px;
+    font-size: .35rem;
+    grid-template-columns: 40px 10px 38px 23px 15px 14px 16px 15px 58px 55px 11px 57px 40px;
+    grid-template-rows: 82px 5px 46px 9px 18px 17px 18px 16px 12px 4px 20px 3px 21px;
+  }
+
+  #screenImg {
+    width: 4.5rem;
+  }
+  .pokemonImg {
+    width: 2.9rem;
+  }
+
+  #typeScreen {
+    padding-left: 6px;
+  }
+
+  #weaknessScreen {
+    padding-left: 6.5px;
+  }
+
+  #heightScreen, #weightScreen {
+    font-size: .275rem;
+  }
+  #rightButton, #leftButton {
+    width: 16px;
+    height: 16px;
+    padding: 12px;
+  }
+
+  #upButton, #downButton {
+    width: 16px;
+    height: 16px;
+    padding:12px;
+  }
+
+  #blueButton {
+    width: 38px;
+    height: 38px;
+    padding: 12px;
+  }
+
+  #blackButton {
+    width: 25px;
+    height: 25px;
+    padding:12px;
+  }
+
+
+@media only screen and (max-width: 390px) {
+  #allPokemon {
+    max-width: 316px;
+  }
+}
+}
