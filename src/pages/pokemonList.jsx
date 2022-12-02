@@ -27,7 +27,7 @@ export function PokemonListPage(props) {
         <div id="allPokemon">
             <div id="pokedexLogo">
                 <Link to={`/pokemon/1`}>
-                    <img src="/images//Logo.webp" alt="pokedex header logo" id='logoImg' />
+                    <img src="./images/pokedex_logo_new.png" alt="pokedex header logo" id='logoImg' />
                 </Link>
             </div>
 
