@@ -43,17 +43,9 @@ li {
 
 #pokedexConsole {
   width: 500px;
+
 }
 
-
-#homePage {
-  display: flexbox;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  max-width: 1000px;
-  line-height: 1.5;
-}
 
 #startButton {
   padding:8px 35px;
@@ -62,6 +54,14 @@ li {
   border-radius: 9999px;
 }
 
+#HomePage {
+  display: flexbox;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 1000px;
+  line-height: 1.5;
+}
 
 #allPokemon {
   max-width: 1138px;
