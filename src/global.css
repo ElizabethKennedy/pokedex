@@ -26,6 +26,13 @@ li {
   line-height: 1.2;
 }
 
+#pokemonLogo {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+
+}
+
 #pokedexLogo {
   display: flex;
   align-content: center;
@@ -34,7 +41,7 @@ li {
   margin: 3.1rem 3rem 2rem 2rem;
 }
 
-#logoImg {
+#pokedexConsole {
   width: 500px;
 }
 
