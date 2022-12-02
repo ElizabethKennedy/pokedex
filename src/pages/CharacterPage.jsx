@@ -7,7 +7,7 @@ export function characterPage(props) {
     let [list, setList] = useState([]);
 
     let pokeball = {
-        img: './images/pokemon-logo-ball.png'
+        img: './images/pokemon-logo.jpg'
     }
     let { id } = useParams();
     let [count, setCount] = useState(Number(id));
@@ -72,13 +72,12 @@ export function characterPage(props) {
 
 
     return (
-        <div id="PokedexPage">
-            <div id="pokedexLogo">
-                <Link to={`/allpokemon`}>
-                    <img src="/images/Logo.webp" alt="pokedex header logo" id='logoImg' />
-                </Link>
+        <div id="CharacterPage">
+                <link to={`/allpokemon`}>
+                    <img src="./images/pokemon-logo.jpg" alt="pokedex header logo" id='logoImg' />
+               </link></div>
             </div>
-            <div style={{ backgroundImage: "url(/images/pokedexImg.png)" }} id="pokedex">
+            <div style={{ backgroundImage: "url(/images/pokedexConsole.png)" }} id="pokedex-console">
                 <div id="mainScreen">
                     <img id="screenImg" src={`${item.img}`} alt={`${item.name}`} />
                 </div>
@@ -222,7 +221,4 @@ export function characterPage(props) {
             </div>
 
 
-            </div>
-        </div>
-    );
 }
