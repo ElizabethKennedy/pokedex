@@ -1,4 +1,4 @@
-export function filterPokemonByName(list, name) {
+/*export function filterPokemonByName(list, name) {
     if (name) return list.filter((pokemon) =>
     pokemon.name === name);
     else
@@ -24,3 +24,4 @@ export function getListOf(list, prop) {
         allItems.concat (pokemon[prop]),[])
     )];
 }
+*/

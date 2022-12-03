@@ -1,11 +1,14 @@
-import { useEffect, useState } from "react";
-import { filterPokemonByWeaknesses, filterPokemonByType, getListOf } from "../helpers/poke.helpers";
+/*import { useEffect, useState } from "react";
+import { filterPokemonByWeaknesses, filterPokemonByType, getListOf } from "../helpers/helpers";
 import { Link } from "react-router-dom";
 
 export function PokemonListPage(props) {
+
+
     let [list, setList] = useState([]);
     let [searchType, setSearchType] = useState("");
     let [searchWeaknesses, setSearchWeaknesses] = useState("");
+
 
     function pokemonCapture() {
         fetch("https://raw.githubusercontent.com/Biuni/PokemonGO-Pokedex/master/pokedex.json")
@@ -24,28 +27,25 @@ export function PokemonListPage(props) {
     let weaknessesArr = getListOf(list, "weaknesses");
 
     return (
-        <div id="allPokemon">
-            <div id="pokedexLogo">
-                <Link to={`/pokemon/1`}>
-                    <img src="./images/pokedex_logo_new.png" alt="pokedex header logo" id='logoImg' />
-                </Link>
-            </div>
+    <div id="allPokemon">
+    <div id="pokedexLogo">
+    <Link to={`/pokemon/1`}>
+    <img src="./images/" alt="pokedex header logo" id='logoImg' />
+    </Link>
+    </div>
 
 
-            <ul id="photoList">
-                {pokemonByWeaknesses.map((pokemon) => {
-                    return (
-                        <li key={pokemon.id}>
-                            <Link to={`/pokemon/${pokemon.id}`}>
-                                <img className="pokemonImg" src={`${pokemon.img}`} alt={`${pokemon.name}`} />
-                            </Link>
-                        </li>
-                    );
-                })}
+    <ul id="photoList">
+    {pokemonByWeaknesses.map((pokemon) => {
+    return (
+    <li key={pokemon.id}>
+    <Link to={`/pokemon/${pokemon.id}`}>
+    <img className="pokemonImg" src={`${pokemon.img}`} alt={`${pokemon.name}`} />
+    </Link>
+    </li>
+    );
+    })}
             </ul>
-
-
-
             <br></br>
 
             <br></br>
@@ -97,3 +97,4 @@ export function PokemonListPage(props) {
         </div>
     );
 }
+*/

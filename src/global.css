@@ -1,3 +1,4 @@
+/*
 * {
   font-family:'Cream Cake';
 
@@ -14,8 +15,7 @@ body {
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  background-color: salmon;
-  background-image: linear-gradient(red, yellow);
+  /*00background-image: linear-gradient(red, salmon, yellow);
 }
 
 ul {
@@ -132,7 +132,7 @@ grid-row: 2 / 6;
 align-self: center;
 justify-self: center;
 }
-/* STATS */
+
 #nameScreen {
   grid-column: 3 / 5;
   grid-row: 10 / 13;
@@ -147,7 +147,7 @@ justify-self: center;
   align-self: center;
   justify-self: center;
   background-color: greenyellow;
-  background-image: linear-gradient(red, yellow);
+  /*background-image: linear-gradient(red, yellow);
   font-size: .55rem;
 }
 
@@ -179,7 +179,7 @@ justify-self: center;
 .invisible-button {
   background-color: transparent;
   outline: none;
-  /* border: none; */
+  /* border: none;
 }
 
 #padRight {
@@ -220,8 +220,8 @@ justify-self: center;
 #padUpButton {
   width: 30px;
   height: 36px;
-  /* display: flex; */
-  /* align-self: bottom; */
+   display: flex;
+   align-self: bottom;
   border-bottom: none;
   border-radius: 12%;
 }
@@ -363,3 +363,4 @@ justify-self: center;
   }
 }
 }
+

@@ -1,4 +1,7 @@
-import logo from './logo.svg';
+
+
+
+/*import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -6,20 +9,21 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+
       </header>
     </div>
   );
 }
 
-export default App;
+export default App;*/
+const express = require("express");
+const app = express();
+
+// Heroku dynamically sets a port
+const PORT = process.env.PORT || 5000;
+
+app.use(express.static("dist"));
+
+app.listen(PORT, () => {
+  console.log("server started on port 5000");
+});

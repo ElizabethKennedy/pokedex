@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+/*import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 
 
@@ -73,10 +73,9 @@ export function characterPage(props) {
 
     return (
         <div id="CharacterPage">
-                <link to={`/allpokemon`}>
+                < to={`/allpokemon`}>
                     <img src="./images/pokemon-logo.jpg" alt="pokedex header logo" id='logoImg' />
-               </link></div>
-            </div>
+               </div> </div>
             <div style={{ backgroundImage: "url(/images/pokedexConsole.png)" }} id="pokedex-console">
                 <div id="mainScreen">
                     <img id="screenImg" src={`${item.img}`} alt={`${item.name}`} />
@@ -222,3 +221,4 @@ export function characterPage(props) {
 
 
 }
+*/
