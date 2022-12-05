@@ -1,16 +1,13 @@
-/*import { useEffect, useState } from "react";
-import { filterPokemonByWeaknesses, filterPokemonByType, getListOf } from "../helpers/helpers";
+import { useEffect, useState } from "react";
+import { filterPokemonByWeaknesses, filterPokemonByType, getListOf } from "../helpers/helpers.js";
 import { Link } from "react-router-dom";
 
-export function PokemonListPage(props) {
-
-
+export function AllPokemonPage(props) {
     let [list, setList] = useState([]);
     let [searchType, setSearchType] = useState("");
     let [searchWeaknesses, setSearchWeaknesses] = useState("");
 
-
-    function pokemonCapture() {
+    function catchEmAll() {
         fetch("https://raw.githubusercontent.com/Biuni/PokemonGO-Pokedex/master/pokedex.json")
             .then((res) => res.json())
             .then((pokemon) => setList(pokemon.pokemon))
@@ -18,7 +15,7 @@ export function PokemonListPage(props) {
     }
 
     useEffect(() => {
-        pokemonCapture();
+        catchEmAll();
     }, []);
 
     let pokemonByType = filterPokemonByType(list, searchType)
@@ -28,26 +25,28 @@ export function PokemonListPage(props) {
 
     return (
     <div id="allPokemon">
-    <div id="pokedexLogo">
+     <div id="pokedexLogo">
     <Link to={`/pokemon/1`}>
-    <img src="./images/" alt="pokedex header logo" id='logoImg' />
-    </Link>
-    </div>
+    <img src="/images/pokedex-logo1.png" alt="pokedex header logo" id='logoImg' />
+        </Link>
+        </div>
 
 
-    <ul id="photoList">
-    {pokemonByWeaknesses.map((pokemon) => {
-    return (
-    <li key={pokemon.id}>
-    <Link to={`/pokemon/${pokemon.id}`}>
-    <img className="pokemonImg" src={`${pokemon.img}`} alt={`${pokemon.name}`} />
-    </Link>
-    </li>
-    );
-    })}
+        <ul id="photoList">
+        {pokemonByWeaknesses.map((pokemon) => {
+        return (
+        <li key={pokemon.id}>
+         <Link to={`/pokemon/${pokemon.id}`}>
+        <img className="pokemonImg" src={`${pokemon.img}`} alt={`${pokemon.name}`} />
+        </Link>
+            </li>
+            );
+         })}
             </ul>
-            <br></br>
 
+
+
+            <br></br>
             <br></br>
             <form>
                 <div className="form-group">
@@ -61,7 +60,7 @@ export function PokemonListPage(props) {
                             value={searchType}
                             onChange={(event) => setSearchType(event.target.value)}
                         >
-                            <option value="">All</option>
+                            <option value=""> All</option>
                             {types.map((type, idx) => {
                                 return (
                                     <option key={type + idx} value={type}>
@@ -97,4 +96,3 @@ export function PokemonListPage(props) {
         </div>
     );
 }
-*/

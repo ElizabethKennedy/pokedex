@@ -1,13 +1,13 @@
-/*import { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 
 
-export function characterPage(props) {
+export function SinglePokemonPage(props) {
     let [item, setItem] = useState({});
     let [list, setList] = useState([]);
 
     let pokeball = {
-        img: './images/pokemon-logo.jpg'
+        img: '/images/pokedex_logo1.png'
     }
     let { id } = useParams();
     let [count, setCount] = useState(Number(id));
@@ -21,7 +21,7 @@ export function characterPage(props) {
     let [key8, setKey8] = useState({});
     let [key9, setKey9] = useState({});
     let [key10, setKey10] = useState({});
-    }
+
 
     async function fetchPokemon() {
         let res = await fetch(`https://raw.githubusercontent.com/Biuni/PokemonGO-Pokedex/master/pokedex.json`);
@@ -33,7 +33,7 @@ export function characterPage(props) {
         setItem(list.find((poke) => poke.id == count));
     }
 
-    function selectPokemon1() {
+    function choosePokemon1() {
         setKey1(list.find((poke) => poke.id == count));
         console.log(key1)
     }
@@ -44,7 +44,7 @@ export function characterPage(props) {
     }, [count, list]);
 
     useEffect(() => {
-        selectPokemon1();
+        choosePokemon1();
     }, [key1])
 
     function nextPokemon() {
@@ -67,16 +67,23 @@ export function characterPage(props) {
 
     function randomPokemon() {
         setCount(Math.floor(Math.random() * 151) + 1);
+    }
 
-
+    // function pok1Chosen() {
+    //     if (key1) {
+    //     <img className="chosen" src={`${key1?.img}`} alt={`${item.name}`} />
+    //     }
+    // }
 
 
     return (
-        <div id="CharacterPage">
-                < to={`/allpokemon`}>
-                    <img src="./images/pokemon-logo.jpg" alt="pokedex header logo" id='logoImg' />
-               </div> </div>
-            <div style={{ backgroundImage: "url(/images/pokedexConsole.png)" }} id="pokedex-console">
+        <div id="PokedexPage">
+            <div id="pokedexLogo">
+                <Link to={`/allpokemon`}>
+                    <img src="/images/pokedex_logo1.png" alt="pokedex header logo" id='logoImg' />
+                </Link>
+            </div>
+            <div style={{ backgroundImage: "url(/images/pokedexImg.png)" }} id="pokedex">
                 <div id="mainScreen">
                     <img id="screenImg" src={`${item.img}`} alt={`${item.name}`} />
                 </div>
@@ -108,39 +115,39 @@ export function characterPage(props) {
                         <u>WEAKNESSES</u>
                         <br></br>
                         <br></br>
-
+                        {/* slice to limit to 4 list items */}
                         {item.weaknesses?.slice(0, 4).map((weakness, idx) => {
                             return <li key={idx}>{weakness}</li>;
                         })}
                     </ul>
                 </div>
-                <div id="right">
+                <div id="dirPadRight">
                     <button
-                        id="rightButton"
+                        id="dirPadRightButton"
                         className="invisible-button"
                         onClick={nextPokemon}
                     >
                     </button>
                 </div>
-                <div id="left">
+                <div id="dirPadLeft">
                     <button
-                        id="leftButton"
+                        id="dirPadLeftButton"
                         className="invisible-button"
                         onClick={lastPokemon}
                     >
                     </button>
                 </div>
-                <div id="up">
+                <div id="dirPadUp">
                     <button
-                        id="upButton"
+                        id="dirPadUpButton"
                         className="invisible-button"
                         onClick={nextPokemon}
                     >
                     </button>
                 </div>
-                <div id="down">
+                <div id="dirPadDown">
                     <button
-                        id="downButton"
+                        id="dirPadDownButton"
                         className="invisible-button"
                         onClick={lastPokemon}
                     >
@@ -154,10 +161,10 @@ export function characterPage(props) {
                     >
                     </button>
                 </div>
-                <div id="blueButtonDiv">
+                <div id="blueCircButtonDiv">
                     <Link to={`/`}>
                         <button
-                            id="blueButton"
+                            id="blueCircButton"
                             className="invisible-button"
                         >
                         </button>
@@ -167,7 +174,7 @@ export function characterPage(props) {
                     <button
                         id="key1"
                         className="invisible-button key"
-                        onClick={selectPokemon1}
+                        onClick={choosePokemon1}
                     >
                     </button>
                     <button
@@ -218,7 +225,14 @@ export function characterPage(props) {
 
                 </div>
             </div>
+            <div id="selectedPokemon">
+                <div>
+                    {/* {pok1Chosen} */}
+                    {/* <img className="chosen" src={`${key1?.img}`} alt={`${key1?.name}`} /> */}
+                </div>
 
 
+            </div>
+        </div>
+    );
 }
-*/

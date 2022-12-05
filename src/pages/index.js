@@ -1,6 +1,5 @@
-/*import { HomePage } from "./HomePage";
-import { CharacterPage } from "./CharacterPage";
-import { PokemonList } from "./PokemonList";
+import { HomePage } from "./HomePage.jsx";
+import { AllPokemonPage } from "./AllPokemonPage.jsx";
+import { SinglePokemonPage } from "./SinglePokemonPage.jsx";
 
-export { HomePage, CharacterPage, PokemonList };
-*/
+export { HomePage, AllPokemonPage, SinglePokemonPage };

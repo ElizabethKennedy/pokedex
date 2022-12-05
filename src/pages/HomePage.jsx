@@ -1,31 +1,37 @@
-/* eslint-disable no-unused-vars */
-/*import React from "react";
+// eslint-disable-next-line no-unused-vars
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 export function HomePage(props) {
     return (
         <div
-         id="homePage" >
+        // style={{ backgroundImage: "")" }}
+         id="HomePage" >
 
-            <div id="pokemonLogo">
+            <div id="pokedexLogo">
                 <Link to={`/allpokemon`}>
-                    <img src="./images/pokemon-logo.jpg" alt="pokedex header logo" id='logoImg' />
+                    <img src="/images/pokemon-logo.jpg" alt="pokedex header logo" id='logoImg' />
                 </Link>
-            </div>
-            <div>
+                </div>
             <header>
-                <h1> Pokemon Pokedex </h1>
+                <h1>Pokemon Pokedex</h1>
+                <div>
+                    <br></br>
+                    <p>
+                        Welcome to the colorful world of Pokemon!
+                        <br></br>
+                        <br></br>
+                        This Pokedex will search for Pokemon by name, type, and weaknesses.
+
+                        <br></br>
+                        <br></br>
+                        <br></br>
                         Push <Link to={`/allpokemon`}><button id="startButton">START</button></Link> to begin!
+                    </p>
+                </div>
 
-                     </header>
-                     <div id="pokedexLogo">
-                        Press the<Link to={'/allpokemon'}>START</Link>key to begin your Pokemon search!
 
-                     </div>
-                     <div id="pokedexLogo" class="image">
-                     <img src="./images/pokedexConsole.png"></img></div></div></div>
-                     </div>
-                     </div>
+            </header>
+        </div>
     );
 }
-*/
