@@ -26,7 +26,7 @@ export function HomePage(props) {
                         <br></br>
                         <br></br>
                         <br></br>
-                        Push <Link to={`/allpokemon`}><button id="startButton">START</button></Link> to begin!
+                       <h2> Push <Link to={`/allpokemon`}><button id="startButton">START</button></Link> to play!</h2>
                     </p>
                 </div>
 

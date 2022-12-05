@@ -227,8 +227,6 @@ export function SinglePokemonPage(props) {
             </div>
             <div id="selectedPokemon">
                 <div>
-                    {/* {pok1Chosen} */}
-                    {/* <img className="chosen" src={`${key1?.img}`} alt={`${key1?.name}`} /> */}
                 </div>
 
 
