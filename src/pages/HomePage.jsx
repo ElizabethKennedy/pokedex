@@ -9,7 +9,7 @@ export function HomePage(props) {
 
             <div id="pokedexLogo">
                 <Link to={`/allpokemon`}>
-                    <img src="./public/images/pokemon-logo.jpg" alt="pokedex header logo" id='logoImg' />
+                    <img src="./images/pokemon-logo.jpg" alt="pokedex header logo" id='logoImg' />
                 </Link>
             </div>
             <header>

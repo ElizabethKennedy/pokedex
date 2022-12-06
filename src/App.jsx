@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import { BrowserRouter, NavLink, Routes, Route} from "react-router-dom";
-import { HomePage, AllPokemonPage, SinglePokemonPage } from "./pages";
+import { HomePage, AllPokemonPage, SinglePokemonPage } from "..";
 
 function App() {
   return (
