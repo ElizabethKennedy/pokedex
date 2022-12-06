@@ -5,32 +5,29 @@ import { Link } from "react-router-dom";
 export function HomePage(props) {
     return (
         <div
-        // style={{ backgroundImage: "")" }}
-         id="HomePage" >
+         id="homePage" >
 
             <div id="pokedexLogo">
                 <Link to={`/allpokemon`}>
                     <img src="/images/pokemon-logo.jpg" alt="pokedex header logo" id='logoImg' />
                 </Link>
-                </div>
+            </div>
             <header>
-                <h1>Pokemon Pokedex</h1>
+                <h1>Pokémon Pokedex</h1>
                 <div>
                     <br></br>
                     <p>
-                        Welcome to the colorful world of Pokemon!
+                        Explore the whimsical world of Pokémon!
                         <br></br>
                         <br></br>
-                        This Pokedex will search for Pokemon by name, type, and weaknesses.
-
+                        This Pokedex will display Pokémon by name, type, and weakness,
+                        and display height and weight statistics for each character.
                         <br></br>
                         <br></br>
                         <br></br>
-                       <h2> Push <Link to={`/allpokemon`}><button id="startButton">START</button></Link> to play!</h2>
+                       <h2>Push <Link to={`/allpokemon`}><button id="startButton">START</button></Link> to play!</h2>
                     </p>
                 </div>
-
-
             </header>
         </div>
     );

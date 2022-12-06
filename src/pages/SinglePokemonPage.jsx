@@ -7,19 +7,28 @@ export function SinglePokemonPage(props) {
     let [list, setList] = useState([]);
 
     let pokeball = {
-        img: '/images/pokedex_logo1.png'
+        img: '/images/Logo.webp'
     }
     let { id } = useParams();
     let [count, setCount] = useState(Number(id));
     let [key1, setKey1] = useState(pokeball);
+    // eslint-disable-next-line no-unused-vars
     let [key2, setKey2] = useState({});
+    // eslint-disable-next-line no-unused-vars
     let [key3, setKey3] = useState({});
+    // eslint-disable-next-line no-unused-vars
     let [key4, setKey4] = useState({});
+    // eslint-disable-next-line no-unused-vars
     let [key5, setKey5] = useState({});
+    // eslint-disable-next-line no-unused-vars
     let [key6, setKey6] = useState({});
+    // eslint-disable-next-line no-unused-vars
     let [key7, setKey7] = useState({});
+    // eslint-disable-next-line no-unused-vars
     let [key8, setKey8] = useState({});
+    // eslint-disable-next-line no-unused-vars
     let [key9, setKey9] = useState({});
+    // eslint-disable-next-line no-unused-vars
     let [key10, setKey10] = useState({});
 
 
@@ -30,21 +39,23 @@ export function SinglePokemonPage(props) {
     }
 
     function catchPokemon() {
-        setItem(list.find((poke) => poke.id == count));
+        setItem(list.find((poke) => poke.id === count));
     }
 
     function choosePokemon1() {
-        setKey1(list.find((poke) => poke.id == count));
+        setKey1(list.find((poke) => poke.id === count));
         console.log(key1)
     }
 
     useEffect(() => {
-        if (list.length == 0) fetchPokemon();
+        if (list.length === 0) fetchPokemon();
         else catchPokemon();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [count, list]);
 
     useEffect(() => {
         choosePokemon1();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [key1])
 
     function nextPokemon() {
@@ -58,7 +69,7 @@ export function SinglePokemonPage(props) {
     }
 
     function lastPokemon() {
-        if (count == 1) {
+        if (count === 1) {
             setCount(151);
         } else {
             setCount(count - 1);
@@ -68,12 +79,6 @@ export function SinglePokemonPage(props) {
     function randomPokemon() {
         setCount(Math.floor(Math.random() * 151) + 1);
     }
-
-    // function pok1Chosen() {
-    //     if (key1) {
-    //     <img className="chosen" src={`${key1?.img}`} alt={`${item.name}`} />
-    //     }
-    // }
 
 
     return (
@@ -92,6 +97,7 @@ export function SinglePokemonPage(props) {
                     <br></br>
                     ID # {item.num}
                 </div>
+                <div id="container">Limited Edition Console</div>
                 <div id="heightScreen">
                     ht: {item.height}
                 </div>
