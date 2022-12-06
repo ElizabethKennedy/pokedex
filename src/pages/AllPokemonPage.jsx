@@ -18,6 +18,15 @@ export function AllPokemonPage(props) {
         catchEmAll();
     }, []);
 
+
+//filter by type and weakness//
+//set option values in the form-group//
+//set event handler to listen for the click event when user selects//
+       // an option from the drop-down boxes//
+//use option, select, key value pairs to create drop-down boxes//
+//use array.map to iterate over the items in the array given item and index//
+       //return types, weaknesses //
+
     let pokemonByType = filterPokemonByType(list, searchType)
     let pokemonByWeaknesses = filterPokemonByWeaknesses(pokemonByType, searchWeaknesses)
     let types = getListOf(list, "type");
@@ -43,6 +52,7 @@ export function AllPokemonPage(props) {
       );
      })}
     </ul>
+
 
     <br></br>
     <br></br>
