@@ -37,7 +37,7 @@ export function SinglePokemonPage(props) {
         let data = await res.json();
         setList(data.pokemon)
     }
-
+/* use strict equality*/
     function catchPokemon() {
         setItem(list.find((poke) => poke.id === count));
     }
@@ -46,7 +46,7 @@ export function SinglePokemonPage(props) {
         setKey1(list.find((poke) => poke.id === count));
         console.log(key1)
     }
-
+/* use strict equality*/
     useEffect(() => {
         if (list.length === 0) fetchPokemon();
         else catchPokemon();
@@ -82,7 +82,7 @@ export function SinglePokemonPage(props) {
 
 
     return (
-        <div id="PokedexPage">
+        <div div id="PokedexPage">
             <div id="pokedexLogo">
                 <Link to={`/allpokemon`}>
                     <img src="/images/pokedex_logo1.png" alt="pokedex header logo" id='logoImg' />
@@ -97,7 +97,12 @@ export function SinglePokemonPage(props) {
                     <br></br>
                     ID # {item.num}
                 </div>
-                <div id="container">Limited Edition Console</div>
+
+                <div id="container">
+                </div>
+                <div class="vl">
+                </div>
+
                 <div id="heightScreen">
                     ht: {item.height}
                 </div>
@@ -234,9 +239,8 @@ export function SinglePokemonPage(props) {
             <div id="selectedPokemon">
                 <div>
                 </div>
-
-
             </div>
         </div>
+
     );
 }

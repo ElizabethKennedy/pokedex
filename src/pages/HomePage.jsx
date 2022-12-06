@@ -9,7 +9,7 @@ export function HomePage(props) {
 
             <div id="pokedexLogo">
                 <Link to={`/allpokemon`}>
-                    <img src="/images/pokemon-logo.jpg" alt="pokedex header logo" id='logoImg' />
+                    <img src="./public/images/pokemon-logo.jpg" alt="pokedex header logo" id='logoImg' />
                 </Link>
             </div>
             <header>
@@ -20,8 +20,8 @@ export function HomePage(props) {
                         Explore the whimsical world of Pokémon!
                         <br></br>
                         <br></br>
-                        This Pokedex will display Pokémon by name, type, and weakness,
-                        and display height and weight statistics for each character.
+                        This Pokedex will search Pokémon by type and weakness,
+                        and display name, height, and weight for each character.
                         <br></br>
                         <br></br>
                         <br></br>
@@ -30,5 +30,7 @@ export function HomePage(props) {
                 </div>
             </header>
         </div>
-    );
+
+
+        );
 }
