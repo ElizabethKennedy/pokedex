@@ -36,7 +36,7 @@ export function AllPokemonPage(props) {
     <div id="allPokemon">
      <div id="pokedexLogo">
     <Link to={`/pokemon/1`}>
-    <img src="./public/images/pokedex-logo1.png" alt="pokedex header logo" id='logoImg' />
+    <img src="./images/pokemon-logo.jpg" alt="pokedex header logo" id='logoImg' />
         </Link>
         </div>
 

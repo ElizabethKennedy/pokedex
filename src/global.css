@@ -35,8 +35,8 @@ h2 {
 
 #container {
   display: flex;
-  width: 25vw;
-  height:19vh;
+  width: 16vw;
+  height:7vh;
   grid-column: 10 /12;
   grid-row: 1/ 5;
   text-align: right;
