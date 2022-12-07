@@ -24,11 +24,14 @@ export function HomePage(props) {
                         and display name, height, and weight for each character.
                         <br></br>
                         <br></br>
+                        <audio src="./audio/Pokemon-Theme-Song.mp3" controls autopplay > </audio>
                         <br></br>
                        <h2>Push <Link to={`/allpokemon`}><button id="startButton">START</button></Link> to play!</h2>
                     </p>
                 </div>
+        
                 <img src="./images/pokemon-logo-ball.png" alt="pokemon logo ball"/>
+
             </header>
         </div>
 
